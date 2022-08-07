@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * @strct specifier - struct specifier
+ * @struct specifier - struct specifier
  * @pass: character is valid
  * @f: associated functions
  *
@@ -18,5 +18,5 @@ int handle_c(va_list args);
 int handle_s(va_list args);
 int handle_percent(va_list args);
 int _putchar(char c);
-int (*pull_function(char x))(va_list args);
+int (*get_functions(char x))(va_list args);
 #endif
