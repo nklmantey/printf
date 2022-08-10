@@ -1,8 +1,9 @@
-#ifndef our_printf
-#define our_printf
+#ifndef OUR_PRINTF_H
+#define OUR_PRINTF_H
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
+
 /**
  * @struct specifier - struct specifier
  * @pass: character is valid
@@ -22,4 +23,8 @@ int handle_s(va_list);
 int handle_percent(va_list);
 int _putchar(char);
 int (*get_functions(char x))(va_list args);
-#endif
+unsigned int handle_buf(char *buf, char c, unsigned int ibuf);
+int print_buf(char *buf, unsigned int nbuf);
+int printf_int(va_list arguments, char *buf, unsigned int ibuf);
+
+#endif /* OUR_PRINTF_H */

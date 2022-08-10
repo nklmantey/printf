@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 #include <stddef.h>
 /**
  * _printf - our variation of printf
@@ -10,7 +10,7 @@
  */
 int _printf(const char *format, ...)
 {
-	if (firma != NULL)
+	if (format != NULL)
 	{
 		int count = 0, i;
 		int (*m)(va_list);
